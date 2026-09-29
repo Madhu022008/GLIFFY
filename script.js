@@ -132,10 +132,12 @@
     let isHoveringHero = false;
 
     heroVisualStage.addEventListener('pointerenter', () => {
+      if (window.innerWidth <= 860) return;
       isHoveringHero = true;
     });
 
     heroVisualStage.addEventListener('pointermove', (e) => {
+      if (window.innerWidth <= 860) return;
       const rect = heroVisualStage.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
@@ -172,6 +174,14 @@
 
     // Smooth animation loop for the mockup rotation
     const updateMockupPhysics = () => {
+      if (window.innerWidth <= 860) {
+        browserMockup.style.transform = '';
+        floatingElements.forEach((el) => {
+          el.style.transform = '';
+        });
+        return requestAnimationFrame(updateMockupPhysics);
+      }
+
       currentRotateX += (targetRotateX - currentRotateX) * 0.08;
       currentRotateY += (targetRotateY - currentRotateY) * 0.08;
 
@@ -197,7 +207,7 @@
       card.style.setProperty('--mouse-x', `${xPercent}%`);
       card.style.setProperty('--mouse-y', `${yPercent}%`);
 
-      if (!prefersReducedMotion) {
+      if (!prefersReducedMotion && window.innerWidth > 860) {
         // Calculate tilt
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
