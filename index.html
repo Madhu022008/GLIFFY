@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLIFFY | Creative Digital Studio — Premium Web & Digital Experiences</title>
+    <meta name="description"
+        content="GLIFFY is a premium creative digital studio crafting inspiring websites, connected designs, and bespoke digital solutions that make a mark.">
+    <meta name="keywords" content="GLIFFY, digital studio, creative agency, web design, UI UX, digital experiences">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.jpg.png">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="theme-dark">
+    <!-- Ambient Cursor Glow Effect & Background Lighting Orbs -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <div class="ambient-canvas-wrapper" aria-hidden="true">
+        <div class="ambient-orb orb-violet"></div>
+        <div class="ambient-orb orb-cyan"></div>
+        <div class="ambient-orb orb-lavender"></div>
+        <div class="ambient-grid"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-container">
+            <!-- GLIFFY Brand Logo -->
+            <a href="#hero" class="brand-logo" id="brandLogo" aria-label="GLIFFY Homepage">
+                <div class="logo-symbol-wrap">
+                    <img src="images/logo.jpg.png" alt="GLIFFY Logo" class="brand-logo-img" width="44" height="44"
+                        onerror="this.onerror=null; this.src='Images/logo.jpg.png'">
+                    <div class="logo-aura" aria-hidden="true"></div>
+                </div>
+                <span class="brand-name">GLIFFY<span class="brand-dot">.</span></span>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active" data-nav="home">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link placeholder-trigger"
+                            data-page="About">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link placeholder-trigger"
+                            data-page="Services">Services</a></li>
+                    <li class="nav-item"><a href="#solutions" class="nav-link placeholder-trigger"
+                            data-page="Solutions">Solutions</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link placeholder-trigger" data-page="Work">Work</a>
+                    </li>
+                    <li class="nav-item"><a href="#magic" class="nav-link" data-nav="process">Process</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link placeholder-trigger"
+                            data-page="Pricing">Pricing</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action -->
+            <div class="header-actions">
+                <button class="btn btn-header-talk" id="headerTalkBtn" aria-label="Open Let's Talk contact form">
+                    <span class="btn-text">Let's Talk</span>
+                    <span class="btn-icon">
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.33331 8H12.6666M12.6666 8L8.66665 4M12.6666 8L8.66665 12" stroke="currentColor"
+                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="glow-edge"></span>
+                </button>
+
+                <!-- Mobile Navigation Toggle Button -->
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileDrawer"
+                    aria-label="Toggle navigation menu">
+                    <span class="hamburger-bar bar-1"></span>
+                    <span class="hamburger-bar bar-2"></span>
+                    <span class="hamburger-bar bar-3"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+            <div class="drawer-inner">
+                <ul class="mobile-nav-list">
+                    <li><a href="#hero" class="mobile-nav-link" data-nav="home">Home</a></li>
+                    <li><a href="#about" class="mobile-nav-link placeholder-trigger" data-page="About">About</a></li>
+                    <li><a href="#services" class="mobile-nav-link placeholder-trigger"
+                            data-page="Services">Services</a></li>
+                    <li><a href="#solutions" class="mobile-nav-link placeholder-trigger"
+                            data-page="Solutions">Solutions</a></li>
+                    <li><a href="#work" class="mobile-nav-link placeholder-trigger" data-page="Work">Work</a></li>
+                    <li><a href="#magic" class="mobile-nav-link" data-nav="process">Process</a></li>
+                    <li><a href="#pricing" class="mobile-nav-link placeholder-trigger" data-page="Pricing">Pricing</a>
+                    </li>
+                    <li><a href="#contact" class="mobile-nav-link" data-nav="contact">Contact</a></li>
+                </ul>
+                <div class="mobile-drawer-cta">
+                    <button class="btn btn-primary btn-block" id="mobileDrawerTalkBtn">
+                        <span>Let's Talk</span>
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.33331 8H12.6666M12.6666 8L8.66665 4M12.6666 8L8.66665 12" stroke="currentColor"
+                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="mainContent">
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero" aria-label="Hero Section">
+            <div class="container hero-container">
+
+                <!-- Hero Text Content -->
+                <div class="hero-content">
+                    <!-- Eyebrow Badge -->
+                    <div class="eyebrow-badge fade-in-up" style="--delay: 100ms;">
+                        <span class="pulsing-beacon" aria-hidden="true"></span>
+                        <span class="eyebrow-text">GLIFFY / CREATIVE DIGITAL STUDIO</span>
+                    </div>
+
+                    <!-- Hero Headline -->
+                    <h1 class="hero-headline fade-in-up" style="--delay: 200ms;">
+                        <span class="headline-line-1">Imagine It.</span>
+                        <span class="headline-line-2 gradient-lavender">We'll Make It Happen.</span>
+                    </h1>
+
+                    <!-- Supporting Description -->
+                    <p class="hero-description fade-in-up" style="--delay: 300ms;">
+                        Websites that inspire. Designs that connect. Digital solutions built around you.
+                    </p>
+
+                    <!-- Animated CTA Buttons -->
+                    <div class="hero-actions fade-in-up" style="--delay: 400ms;">
+                        <a href="#contact" class="btn btn-primary btn-hero-start" id="btnStartProject">
+                            <span class="btn-text">Start a Project</span>
+                            <span class="btn-arrow-icon" aria-hidden="true">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.33331 8H12.6666M12.6666 8L8.66665 4M12.6666 8L8.66665 12"
+                                        stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span class="btn-radial-shine"></span>
+                        </a>
+
+                        <a href="#magic" class="btn btn-secondary btn-hero-explore" id="btnExploreGliffy">
+                            <span class="btn-icon-play" aria-hidden="true">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="5,3 13,8 5,13" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span class="btn-text">Explore GLIFFY</span>
+                        </a>
+                    </div>
+
+                    <!-- Studio Trust Bar -->
+                    <div class="hero-trust-bar fade-in-up" style="--delay: 500ms;">
+                        <div class="trust-item">
+                            <span class="trust-sparkle">✦</span>
+                            <span>Bespoke Architecture</span>
+                        </div>
+                        <div class="trust-divider" aria-hidden="true"></div>
+                        <div class="trust-item">
+                            <span class="trust-sparkle">✦</span>
+                            <span>Sub-second Speeds</span>
+                        </div>
+                        <div class="trust-divider" aria-hidden="true"></div>
+                        <div class="trust-item">
+                            <span class="trust-sparkle">✦</span>
+                            <span>Award-Grade Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual: Original Layered 3D Browser Mockup & Floating Interface -->
+                <div class="hero-visual-wrapper fade-in-up" style="--delay: 350ms;" id="heroVisualStage">
+                    <div class="mockup-3d-stage" id="mockupStage">
+
+                        <!-- Atmospheric Glow behind mockup -->
+                        <div class="mockup-backdrop-glow" aria-hidden="true"></div>
+
+                        <!-- Floating Orbital 3D Geometric Accents -->
+                        <div class="floating-geo geo-crystal" aria-hidden="true" data-depth="0.12">
+                            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="crysGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#DDD6FE" stop-opacity="0.8" />
+                                        <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
+                                        <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.9" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="30,5 55,20 30,35 5,20" fill="url(#crysGrad)" fill-opacity="0.3"
+                                    stroke="url(#crysGrad)" stroke-width="1.5" />
+                                <polygon points="30,35 55,20 30,55 5,20" fill="url(#crysGrad)" fill-opacity="0.15"
+                                    stroke="url(#crysGrad)" stroke-width="1.5" />
+                                <line x1="30" y1="5" x2="30" y2="55" stroke="url(#crysGrad)" stroke-width="1.5"
+                                    stroke-dasharray="2 2" />
+                            </svg>
+                        </div>
+
+                        <div class="floating-geo geo-torus" aria-hidden="true" data-depth="0.18">
+                            <div class="torus-ring"></div>
+                        </div>
+
+                        <!-- Floating Interface Card 1: Metric Uplift (Top Right) -->
+                        <div class="floating-badge badge-metric" data-depth="0.22" id="badgeConversion">
+                            <div class="badge-icon-wrap cyan">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 11.5L6 7.5L9.5 11L14 4.5M14 4.5H10.5M14 4.5V8" stroke="#38BDF8"
+                                        stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="badge-info">
+                                <div class="badge-val-row">
+                                    <span class="badge-num">+142%</span>
+                                    <span class="badge-status-pill">Surge</span>
+                                </div>
+                                <span class="badge-sub">Conversion Velocity</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Interface Card 2: Design System Tokens (Bottom Left) -->
+                        <div class="floating-badge badge-design-system" data-depth="0.16" id="badgeTokens">
+                            <div class="ds-header">
+                                <div class="ds-title">
+                                    <span class="ds-dot"></span>
+                                    <span>Design Tokens v2.4</span>
+                                </div>
+                                <span class="ds-status">SYNCED</span>
+                            </div>
+                            <div class="ds-swatches">
+                                <span class="swatch swatch-violet" title="Rich Violet #8B5CF6"></span>
+                                <span class="swatch swatch-lavender" title="Lavender #DDD6FE"></span>
+                                <span class="swatch swatch-cyan" title="Soft Cyan #38BDF8"></span>
+                                <span class="swatch swatch-navy" title="Midnight Navy #0B0F24"></span>
+                            </div>
+                            <div class="ds-footer">
+                                <span class="ds-token-label">48 Components Live</span>
+                                <div class="ds-toggle-preview active" aria-hidden="true">
+                                    <span class="toggle-track"></span>
+                                    <span class="toggle-knob"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Interface Card 3: Client Satisfaction (Bottom Right) -->
+                        <div class="floating-badge badge-rating" data-depth="0.25" id="badgeRating">
+                            <div class="rating-stars" aria-label="5 out of 5 stars">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <div class="rating-meta">
+                                <span class="rating-score">5.0</span>
+                                <span class="rating-label">Client Rating</span>
+                            </div>
+                            <div class="avatar-stack">
+                                <span class="avatar av-1">JD</span>
+                                <span class="avatar av-2">MR</span>
+                                <span class="avatar av-3">SL</span>
+                                <span class="avatar av-more">+42</span>
+                            </div>
+                        </div>
+
+                        <!-- THE MAIN 3D BROWSER / LAPTOP MOCKUP -->
+                        <div class="browser-mockup" id="browserMockup" data-depth="0.08">
+                            <!-- Window Chrome Header -->
+                            <div class="mockup-chrome">
+                                <div class="traffic-lights" aria-hidden="true">
+                                    <span class="tl-dot tl-red"></span>
+                                    <span class="tl-dot tl-yellow"></span>
+                                    <span class="tl-dot tl-green"></span>
+                                </div>
+                                <div class="mockup-url-bar">
+                                    <svg class="url-lock" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2" y="5" width="8" height="6" rx="1.5" stroke="#94A3B8"
+                                            stroke-width="1.2" />
+                                        <path d="M4 5V3.5C4 2.39543 4.89543 1.5 6 1.5C7.10457 1.5 8 2.39543 8 3.5V5"
+                                            stroke="#94A3B8" stroke-width="1.2" />
+                                    </svg>
+                                    <span class="url-text">gliffy.studio/spatial-canvas</span>
+                                    <span class="url-tag">PROD</span>
+                                </div>
+                                <div class="mockup-window-actions" aria-hidden="true">
+                                    <span class="win-btn"></span>
+                                    <span class="win-btn"></span>
+                                </div>
+                            </div>
+
+                            <!-- Inner Browser Display: Interactive Imaginary Studio Website -->
+                            <div class="mockup-viewport">
+                                <!-- Mini Mockup Navigation -->
+                                <div class="vp-nav">
+                                    <div class="vp-brand">
+                                        <span class="vp-dot"></span>
+                                        <span class="vp-brand-text">GLIFFY OS</span>
+                                    </div>
+                                    <div class="vp-tabs">
+                                        <button class="vp-tab active" data-tab="spatial">Spatial Engine</button>
+                                        <button class="vp-tab" data-tab="metrics">Telemetry</button>
+                                        <button class="vp-tab" data-tab="render">3D Shaders</button>
+                                    </div>
+                                    <div class="vp-latency">
+                                        <span class="pulse-indicator"></span> 14ms
+                                    </div>
+                                </div>
+
+                                <!-- Viewport Stage / Canvas Canvas Screen -->
+                                <div class="vp-canvas">
+                                    <!-- Abstract Spatial Visual Element -->
+                                    <div class="spatial-hero-center">
+                                        <div class="spatial-cube-frame">
+                                            <div class="cube-face face-front">GLIFFY</div>
+                                            <div class="cube-face face-back">INNOVATE</div>
+                                            <div class="cube-face face-right">CONNECT</div>
+                                            <div class="cube-face face-left">CRAFT</div>
+                                            <div class="cube-face face-top"></div>
+                                            <div class="cube-face face-bottom"></div>
+                                        </div>
+
+                                        <!-- Dynamic Wave/Audio Visualizer Lines -->
+                                        <div class="spectrum-visualizer" aria-hidden="true">
+                                            <span class="spec-bar bar-1"></span>
+                                            <span class="spec-bar bar-2"></span>
+                                            <span class="spec-bar bar-3"></span>
+                                            <span class="spec-bar bar-4"></span>
+                                            <span class="spec-bar bar-5"></span>
+                                            <span class="spec-bar bar-6"></span>
+                                            <span class="spec-bar bar-7"></span>
+                                            <span class="spec-bar bar-8"></span>
+                                            <span class="spec-bar bar-9"></span>
+                                            <span class="spec-bar bar-10"></span>
+                                        </div>
+
+                                        <div class="spatial-text-overlay">
+                                            <span class="spatial-tag">NEXT-GEN WEB ARCHITECTURE</span>
+                                            <h4 class="spatial-title">Fluid Motion & High Performance</h4>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mini Telemetry Strip inside Mockup -->
+                                    <div class="vp-telemetry-strip">
+                                        <div class="telem-item">
+                                            <span class="telem-lbl">Render Engine</span>
+                                            <span class="telem-val">WebGL 2.0 / GPU Accelerated</span>
+                                        </div>
+                                        <div class="telem-item">
+                                            <span class="telem-lbl">Frame Budget</span>
+                                            <span class="telem-val text-cyan">60 FPS Locked</span>
+                                        </div>
+                                        <div class="telem-item">
+                                            <span class="telem-lbl">Interactivity</span>
+                                            <span class="telem-val text-lavender">Kinetic Reactive</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Glass Sheen Overlay -->
+                                <div class="vp-glass-sheen" aria-hidden="true"></div>
+                            </div>
+
+                            <!-- Sleek laptop bottom chin highlight -->
+                            <div class="mockup-chassis-lip" aria-hidden="true">
+                                <span class="lip-notch"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECOND SECTION: THE MAGIC BEHIND EVERY PROJECT -->
+        <section class="section-magic" id="magic" aria-label="Our Process and Philosophy">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="section-header text-center reveal-on-scroll">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-accent">✦</span>
+                        <span>THREE-STAGE METHODOLOGY</span>
+                    </div>
+                    <h2 class="section-heading">The Magic Behind Every Project</h2>
+                    <p class="section-subtitle">Every great digital experience begins with a spark.</p>
+                </div>
+
+                <!-- The Exactly Three Interactive Process Cards -->
+                <div class="magic-cards-grid">
+
+                    <!-- CARD 01: THE SPARK -->
+                    <article class="magic-card card-spark reveal-on-scroll" data-card-index="1" tabindex="0">
+                        <div class="card-glow-layer" aria-hidden="true"></div>
+                        <div class="card-border-glow" aria-hidden="true"></div>
+
+                        <div class="card-inner">
+                            <!-- Top Header: Step Number & Line Icon -->
+                            <div class="card-top">
+                                <div class="card-tag-pill">
+                                    <span class="tag-number">01</span>
+                                    <span class="tag-sep">—</span>
+                                    <span class="tag-title">THE SPARK</span>
+                                </div>
+
+                                <!-- Custom Line Icon 01: Cosmic Starburst / Spark Geometry -->
+                                <div class="card-icon-wrap" aria-hidden="true">
+                                    <svg class="line-icon" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="sparkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#DDD6FE" />
+                                                <stop offset="50%" stop-color="#C084FC" />
+                                                <stop offset="100%" stop-color="#38BDF8" />
+                                            </linearGradient>
+                                        </defs>
+                                        <!-- Animated central radiant spark -->
+                                        <path class="icon-path path-burst"
+                                            d="M24 6L26.5 19L39 21.5L26.5 24L24 37L21.5 24L9 21.5L21.5 19L24 6Z"
+                                            stroke="url(#sparkGrad)" stroke-width="2" stroke-linejoin="round" />
+                                        <circle class="icon-ring ring-1" cx="24" cy="21.5" r="16"
+                                            stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.5"
+                                            stroke-dasharray="4 4" />
+                                        <path class="icon-path path-ray"
+                                            d="M37 9L34 12M11 9L14 12M37 34L34 31M11 34L14 31" stroke="url(#sparkGrad)"
+                                            stroke-width="1.5" stroke-linecap="round" />
+                                        <circle class="icon-core" cx="24" cy="21.5" r="2.5" fill="#38BDF8" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Main Card Body -->
+                            <div class="card-body">
+                                <h3 class="card-heading">The Spark</h3>
+                                <p class="card-text">
+                                    Your ideas, ambitions and goals become the starting point of something
+                                    extraordinary.
+                                </p>
+                            </div>
+
+                            <!-- Card Micro Details & Deliverables -->
+                            <div class="card-footer">
+                                <ul class="card-pill-list" aria-label="Key aspects of The Spark">
+                                    <li class="pill-chip">Strategic Discovery</li>
+                                    <li class="pill-chip">Creative Blueprint</li>
+                                    <li class="pill-chip">Bold Ideation</li>
+                                </ul>
+                                <div class="card-action-hint">
+                                    <span class="hint-text">Stage Phase: Discovery</span>
+                                    <span class="hint-arrow">→</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CARD 02: THE CRAFT -->
+                    <article class="magic-card card-craft reveal-on-scroll" data-card-index="2" tabindex="0">
+                        <div class="card-glow-layer" aria-hidden="true"></div>
+                        <div class="card-border-glow" aria-hidden="true"></div>
+
+                        <div class="card-inner">
+                            <!-- Top Header: Step Number & Line Icon -->
+                            <div class="card-top">
+                                <div class="card-tag-pill">
+                                    <span class="tag-number">02</span>
+                                    <span class="tag-sep">—</span>
+                                    <span class="tag-title">THE CRAFT</span>
+                                </div>
+
+                                <!-- Custom Line Icon 02: Isometric Prism & Precision Drafting -->
+                                <div class="card-icon-wrap" aria-hidden="true">
+                                    <svg class="line-icon" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="craftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#38BDF8" />
+                                                <stop offset="50%" stop-color="#A855F7" />
+                                                <stop offset="100%" stop-color="#DDD6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                        <!-- Isometric geometric drafting matrix -->
+                                        <path class="icon-path" d="M24 7L38 15V31L24 39L10 31V15L24 7Z"
+                                            stroke="url(#craftGrad)" stroke-width="2" stroke-linejoin="round" />
+                                        <path class="icon-path path-inner-prism"
+                                            d="M24 7V39M10 15L24 23L38 15M10 31L24 23M38 31L24 23"
+                                            stroke="url(#craftGrad)" stroke-width="1.75" stroke-linejoin="round" />
+                                        <circle cx="24" cy="23" r="3" fill="#A855F7" stroke="#DDD6FE"
+                                            stroke-width="1.5" />
+                                        <circle cx="24" cy="7" r="1.5" fill="#38BDF8" />
+                                        <circle cx="38" cy="15" r="1.5" fill="#38BDF8" />
+                                        <circle cx="10" cy="15" r="1.5" fill="#38BDF8" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Main Card Body -->
+                            <div class="card-body">
+                                <h3 class="card-heading">The Craft</h3>
+                                <p class="card-text">
+                                    We combine thoughtful design and smart technology to shape your unique digital
+                                    experience.
+                                </p>
+                            </div>
+
+                            <!-- Card Micro Details & Deliverables -->
+                            <div class="card-footer">
+                                <ul class="card-pill-list" aria-label="Key aspects of The Craft">
+                                    <li class="pill-chip">Design Systems</li>
+                                    <li class="pill-chip">Modern Engineering</li>
+                                    <li class="pill-chip">Kinetic Motion</li>
+                                </ul>
+                                <div class="card-action-hint">
+                                    <span class="hint-text">Stage Phase: Execution</span>
+                                    <span class="hint-arrow">→</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CARD 03: THE REVEAL -->
+                    <article class="magic-card card-reveal reveal-on-scroll" data-card-index="3" tabindex="0">
+                        <div class="card-glow-layer" aria-hidden="true"></div>
+                        <div class="card-border-glow" aria-hidden="true"></div>
+
+                        <div class="card-inner">
+                            <!-- Top Header: Step Number & Line Icon -->
+                            <div class="card-top">
+                                <div class="card-tag-pill">
+                                    <span class="tag-number">03</span>
+                                    <span class="tag-sep">—</span>
+                                    <span class="tag-title">THE REVEAL</span>
+                                </div>
+
+                                <!-- Custom Line Icon 03: Dimensional Portal & Radiant Beacon -->
+                                <div class="card-icon-wrap" aria-hidden="true">
+                                    <svg class="line-icon" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="revealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#C084FC" />
+                                                <stop offset="50%" stop-color="#38BDF8" />
+                                                <stop offset="100%" stop-color="#DDD6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                        <!-- Dimensional launch beacon / aperture -->
+                                        <circle class="icon-ring" cx="24" cy="24" r="18" stroke="url(#revealGrad)"
+                                            stroke-width="1.75" stroke-dasharray="3 3" />
+                                        <path class="icon-path" d="M24 10L32 18L24 26L16 18L24 10Z"
+                                            stroke="url(#revealGrad)" stroke-width="2" stroke-linejoin="round" />
+                                        <path class="icon-path" d="M24 22L36 34M24 22L12 34" stroke="url(#revealGrad)"
+                                            stroke-width="2" stroke-linecap="round" />
+                                        <path class="icon-path" d="M18 38H30" stroke="url(#revealGrad)" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <circle cx="24" cy="18" r="2.5" fill="#38BDF8" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Main Card Body -->
+                            <div class="card-body">
+                                <h3 class="card-heading">The Reveal</h3>
+                                <p class="card-text">
+                                    Your project comes to life, polished and ready to make its mark in the digital
+                                    world.
+                                </p>
+                            </div>
+
+                            <!-- Card Micro Details & Deliverables -->
+                            <div class="card-footer">
+                                <ul class="card-pill-list" aria-label="Key aspects of The Reveal">
+                                    <li class="pill-chip">Flawless Deployment</li>
+                                    <li class="pill-chip">Global Performance</li>
+                                    <li class="pill-chip">Market Impact</li>
+                                </ul>
+                                <div class="card-action-hint">
+                                    <span class="hint-text">Stage Phase: Launch</span>
+                                    <span class="hint-arrow">→</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FINAL CTA SECTION -->
+        <section class="section-cta" id="contact" aria-label="Call to Action Section">
+            <div class="container">
+                <div class="cta-card reveal-on-scroll">
+                    <!-- Ambient CTA lighting -->
+                    <div class="cta-glow-mesh" aria-hidden="true"></div>
+
+                    <div class="cta-content">
+                        <div class="cta-eyebrow">
+                            <span class="pulse-beacon-cyan" aria-hidden="true"></span>
+                            <span>START A CONVERSATION</span>
+                        </div>
+
+                        <h2 class="cta-heading">Your Next Big Idea Starts Here.</h2>
+
+                        <p class="cta-subtitle">
+                            Have something in mind? Let's turn it into a digital experience worth remembering.
+                        </p>
+
+                        <div class="cta-button-wrap">
+                            <button class="btn btn-primary btn-cta-talk" id="btnCtaTalk"
+                                aria-label="Let's Talk about your project">
+                                <span class="btn-text">Let's Talk</span>
+                                <span class="btn-arrow" aria-hidden="true">
+                                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33331 8H12.6666M12.6666 8L8.66665 4M12.6666 8L8.66665 12"
+                                            stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="btn-ambient-pulse"></span>
+                            </button>
+                        </div>
+
+                        <!-- Contact meta strip -->
+                        <div class="cta-meta-strip">
+                            <div class="meta-item">
+                                <span class="meta-label">Direct Inquiry</span>
+                                <button class="email-copy-pill" id="copyEmailBtn" title="Click to copy email address">
+                                    <span class="email-text">hello@gliffy.studio</span>
+                                    <span class="copy-badge" id="copyBadge">Copy</span>
+                                </button>
+                            </div>
+                            <div class="meta-divider" aria-hidden="true"></div>
+                            <div class="meta-item">
+                                <span class="meta-label">Response Velocity</span>
+                                <span class="meta-val">Within 24 Hours</span>
+                            </div>
+                            <div class="meta-divider" aria-hidden="true"></div>
+                            <div class="meta-item">
+                                <span class="meta-label">Availability</span>
+                                <span class="meta-val text-cyan">● Q2/Q3 Commissions Open</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="siteFooter">
+        <div class="container footer-container">
+
+            <div class="footer-top">
+                <!-- Minimal GLIFFY branding -->
+                <div class="footer-brand">
+                    <a href="#hero" class="brand-logo footer-logo" aria-label="GLIFFY Return to top">
+                        <div class="logo-symbol-wrap">
+                            <svg class="logo-symbol" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4L34 12V28L20 36L6 28V12L20 4Z" stroke="url(#logoGrad)" stroke-width="2"
+                                    stroke-linejoin="round" />
+                                <path d="M28 15H17C14.2386 15 12 17.2386 12 20C12 22.7614 14.2386 25 17 25H26V19H20"
+                                    stroke="url(#logoInner)" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="brand-name">GLIFFY<span class="brand-dot">.</span></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Crafting bespoke digital experiences for visionary brands and founders worldwide.
+                    </p>
+                </div>
+
+                <!-- Quick navigation links -->
+                <nav class="footer-nav" aria-label="Footer Navigation">
+                    <div class="footer-nav-col">
+                        <span class="col-title">Navigation</span>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#magic">Process & Methodology</a></li>
+                            <li><a href="#contact">Start a Project</a></li>
+                            <li><a href="#about" class="placeholder-trigger" data-page="About Studio">About Studio</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <span class="col-title">Explore</span>
+                        <ul>
+                            <li><a href="#services" class="placeholder-trigger" data-page="Services">Bespoke
+                                    Services</a></li>
+                            <li><a href="#solutions" class="placeholder-trigger" data-page="Solutions">Enterprise
+                                    Solutions</a></li>
+                            <li><a href="#work" class="placeholder-trigger" data-page="Selected Work">Selected
+                                    Showcase</a></li>
+                            <li><a href="#pricing" class="placeholder-trigger" data-page="Pricing Model">Investment
+                                    Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <span class="col-title">Connect</span>
+                        <ul class="social-links-list">
+                            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                    class="social-link">Twitter / X ↗</a></li>
+
+                            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="social-link">GitHub ↗</a></li>
+                            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                                    class="social-link">LinkedIn ↗</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Minimal Copyright & Back to Top -->
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 GLIFFY. All rights reserved. Built with precision and passion.
+                </p>
+
+                <div class="footer-bottom-actions">
+                    <span class="system-status">
+                        <span class="status-dot"></span> System Operational
+                    </span>
+                    <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+                        <span>Back to top</span>
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 12.6666V3.33331M8 3.33331L4 7.33331M8 3.33331L12 7.33331" stroke="currentColor"
+                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE MODAL: LET'S TALK / PROJECT INQUIRY -->
+    <div class="modal-backdrop" id="talkModal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="modalTitle">
+        <div class="modal-panel">
+            <div class="modal-header">
+                <div class="modal-badge">
+                    <span class="modal-dot"></span>
+                    <span>INITIATE ENGAGEMENT</span>
+                </div>
+                <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <h3 class="modal-title" id="modalTitle">Let's craft something memorable together.</h3>
+                <p class="modal-desc">
+                    Tell us about your upcoming vision or reach out directly to our principal design team.
+                </p>
+
+                <form class="modal-form" id="talkForm" onsubmit="event.preventDefault(); window.handleFormSubmit();">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Your Name</label>
+                            <input type="text" id="contactName" class="form-input" placeholder="e.g. Alex Vance"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Work Email</label>
+                            <input type="email" id="contactEmail" class="form-input" placeholder="alex@company.com"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectType" class="form-label">Project Scope</label>
+                        <div class="scope-chips" id="scopeChips">
+                            <button type="button" class="scope-chip active">Bespoke Website</button>
+                            <button type="button" class="scope-chip">Brand & UI/UX</button>
+                            <button type="button" class="scope-chip">Interactive 3D / WebGL</button>
+                            <button type="button" class="scope-chip">Full Digital Strategy</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectVision" class="form-label">Brief Vision</label>
+                        <textarea id="projectVision" class="form-textarea" rows="3"
+                            placeholder="Tell us about your objectives, timeline, or references..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-submit-inquiry" id="submitInquiryBtn">
+                        <span>Send Project Inquiry</span>
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.33331 8H12.6666M12.6666 8L8.66665 4M12.6666 8L8.66665 12" stroke="currentColor"
+                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </form>
+
+                <div class="modal-form-success" id="formSuccessMessage" style="display: none;">
+                    <div class="success-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h4>Inquiry Received with Priority</h4>
+                    <p>Thank you for reaching out to GLIFFY. Our design director will review your brief and get back to
+                        you within 24 hours.</p>
+                    <button class="btn btn-secondary" id="successCloseBtn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROTOTYPE PLACEHOLDER TOAST NOTIFICATION -->
+    <div class="prototype-toast" id="prototypeToast" role="status" aria-live="polite">
+        <div class="toast-symbol">✦</div>
+        <div class="toast-body">
+            <span class="toast-title" id="toastTitle">Section In Development</span>
+            <span class="toast-message" id="toastMsg">This page is part of the forthcoming studio release. Welcome to
+                the live homepage prototype!</span>
+        </div>
+        <button class="toast-close" id="toastCloseBtn" aria-label="Dismiss message">✕</button>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+</body>
+
+</html>
